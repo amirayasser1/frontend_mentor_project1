@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&family=Outfit:wght@300;400;700&display=swap');
+body {
+    font-family: 'Outfit', sans-serif;
+    color:hsl(30, 10%, 34%);
+    background-color: hsl(30, 18%, 87%);
+  }
+
+  .firstp{
+    margin-top: -12px;
+  }
+
+  h1, h2 {
+    color:hsl(24, 5%, 18%);
+    font-family: 'Young Serif', serif;
+    font-weight: 400 ;
+    font-size: 2.5em;
+  }
+  .listtitle{
+   color: hsl(332, 51%, 32%);
+   font-weight: 700;
+   font-size: 19px;
+  }
+
+  td.number{
+    color:hsl(14, 45%, 36%);
+    font-weight: 700;
+  }
+  .listtitle2{
+    font-family: 'Young Serif', serif;
+    color: hsl(14, 45%, 36%);
+    font-weight: 500;
+    font-size: 25px;
+    margin:0;
+   }
+
+   hr {
+    width: 100%;          /* Line width */
+    height: 1px;         /* Line thickness */
+    background-color: hsl(30, 18%, 87%); /* Line color */
+    border: none;        /* Remove default border */
+    margin: 20px auto;   /* Center the line */
+  }
+  .list1{
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 6px;
+  }
+  img{ 
+    margin-left: 3px;
+    width: 100%;
+    border-radius: 10px;
+    
+  }
+  b{
+    font-weight: 700;
+  }
+  
+.page{
+    background-color: hsl(0, 0%, 100%);
+    margin: 100px 350px 100px 350px;
+    padding :60px;
+    display: grid;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+   
+}
+
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  tr {
+    border-bottom: 1px solid hsl(30, 18%, 87%); /* Adds line between rows */
+  }
+  
+  td {
+    padding: 10px;
+  }
+  ul{
+    list-style: none;
+  }
+  li{
+    margin: 10px;
+ 
+  }
+  li.first::before {
+    content: " • ";  /* Unicode bullet */
+    font-weight: normal;
+    font-size: 1.3em;
+    color: hsl(332, 51%, 32%);
+  }
+  li.second::marker{
+   color:  hsl(14, 45%, 36%);;
+  }
+ 
+/* mobile web */
+@media (max-width: 375px) {
+    .page {
+      margin: 20px; /* Reduce margin for small screens */
+      padding: 20px; /* Less padding */
+    }
+  
+    h1, h2 {
+      font-size: 1em; 
+    }
+  
+    img {
+      width: 90%;
+  
+    }
+  
+    .listtitle2 {
+      font-size: 20px; 
+    }
+  }
+  
+  
+
+    /* desktop */
+  
+  
+    @media (min-width: 1440px) {
+        .page {
+          max-width: 900px; /* Centered content */
+          margin: 100px auto; /* Better spacing */
+        }
+      
+        h1 {
+          font-size: 3em; /* Larger title */
+        }
+      
+        p {
+          font-size: 18px;
+        }
+      }
+      
